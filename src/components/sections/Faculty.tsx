@@ -2,10 +2,10 @@
 
 import React from "react";
 import { faculty } from "@/lib/data";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export function Faculty() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -15,7 +15,7 @@ export function Faculty() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9, y: 20 },
     visible: { 
       opacity: 1, 
