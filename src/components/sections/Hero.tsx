@@ -140,9 +140,7 @@ export function Hero() {
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-blue-400 to-amber-400" />
           
           {heroStats.map((stat, index) => {
-            const numValue = typeof stat.value === 'string' 
-              ? parseInt(stat.value.replace(/,/g, ''), 10) 
-              : stat.value;
+            const numValue = stat.value;
             return (
               <div key={index} className="flex flex-col items-center justify-center pt-6 md:pt-0 first:pt-0 group">
                 <div className="text-4xl md:text-5xl font-black font-heading text-zinc-900 mb-2 tracking-tight group-hover:scale-110 transition-transform duration-300">
