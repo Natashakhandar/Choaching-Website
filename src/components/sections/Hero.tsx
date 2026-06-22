@@ -87,7 +87,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, type: "spring" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-black font-heading mb-6 tracking-tight text-zinc-900 leading-[1.1]"
+          className="text-5xl md:text-7xl font-bold font-heading mb-6 tracking-tight text-zinc-900 leading-[1.1]"
         >
           Shape Your Future With India's{" "}
           <span className="relative whitespace-nowrap">
@@ -105,7 +105,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-lg md:text-2xl text-zinc-600 max-w-3xl mx-auto mb-12 font-medium leading-relaxed"
+          className="text-lg md:text-xl text-zinc-600 max-w-3xl mx-auto mb-12 font-medium leading-relaxed"
         >
           Expert coaching for JEE, NEET, MHT-CET and Foundation. Experience AI-driven learning, world-class faculty, and guaranteed results.
         </motion.p>
@@ -143,7 +143,7 @@ export function Hero() {
             const numValue = stat.value;
             return (
               <div key={index} className="flex flex-col items-center justify-center pt-6 md:pt-0 first:pt-0 group">
-                <div className="text-4xl md:text-5xl font-black font-heading text-zinc-900 mb-2 tracking-tight group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl font-bold font-heading text-zinc-900 mb-2 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-800">
                     <Counter end={numValue} />
                   </span>
